@@ -132,7 +132,7 @@ const allQuestions = [
 
         function resetTimer() {
             clearInterval(timer);
-            timeLeft = 5;
+            timeLeft = 7;
             document.getElementById('timer').innerText = timeLeft;
             
             timer = setInterval(() => {
