@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Igaz-Hamis</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Igaz-Hamis kihívás</h1>
+        <div id="menu">
+            <button class="button-1" onclick="startGame()">Játék indítása</button>
+        </div>
+        <div id="game" class="hidden">
+            <p id="lives">❤️❤️❤️</p>
+            <h2 id="question" class="question-box"></h2>
+            <button id="button-2" class="button-2" onclick="answer(true)">Igaz</button>
+            <button id="button-3" class="button-3" onclick="answer(false)">Hamis</button>
+            <p id="score">Pontszám: 0</p>
+            <p id="timer">5</p>
+        </div>
+        <div id="result" class="hidden">
+            <h2 id="finalScore"></h2>
+            <button class="button-1" id="fourth" onclick="resetGame()">Újra</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
